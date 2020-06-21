@@ -13,15 +13,15 @@
 [submodule "FMS"]
 	path = FMS
 	url = https://github.com/NOAA-GFDL/FMS
-	branch = master
+	branch = dev-update-2020.02 
 [submodule "stochastic_physics"]
 	path = stochastic_physics
 	url = https://github.com/noaa-psd/stochastic_physics
 	branch = master
 [submodule "MOM6"]
 	path = MOM6
-	url = https://github.com/NOAA-EMC/MOM6-interface
-	branch = develop
+	url = https://github.com/jiandewang/MOM6-interface
+	branch = feature/TEST-FMS202002 
 [submodule "CMEPS"]
 	path = CMEPS
 	url = https://github.com/ESCOMP/CMEPS.git
