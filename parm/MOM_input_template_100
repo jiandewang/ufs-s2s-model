@@ -1,5 +1,16 @@
 ! This file was written by the model and records all non-layout or debugging parameters used at run-time.
 
+FIX_UNSPLIT_DT_VISC_BUG = True !False
+Z_INIT_REMAP_OLD_ALG = True
+!FIX_USTAR_GUSTLESS_BUG = False
+!REMAP_UV_USING_OLD_ALG = True
+USE_LAND_MASK_FOR_HVISC = False
+!USE_GM_WORK_BUG = True
+!KAPPA_SHEAR_ITER_BUG = True
+!KAPPA_SHEAR_ALL_LAYER_TKE_BUG = True
+!DEFAULT_2018_ANSWERS = True
+!USE_PSURF_IN_EOS = False
+
 ! === module MOM ===
 
 ! === module MOM_unit_scaling ===
