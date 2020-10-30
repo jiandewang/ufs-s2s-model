@@ -1,15 +1,24 @@
 ! This file was written by the model and records all non-layout or debugging parameters used at run-time.
 
-FIX_UNSPLIT_DT_VISC_BUG = True !False
-Z_INIT_REMAP_OLD_ALG = True
-!FIX_USTAR_GUSTLESS_BUG = False
-!REMAP_UV_USING_OLD_ALG = True
-USE_LAND_MASK_FOR_HVISC = False
-!USE_GM_WORK_BUG = True
-!KAPPA_SHEAR_ITER_BUG = True
-!KAPPA_SHEAR_ALL_LAYER_TKE_BUG = True
-!DEFAULT_2018_ANSWERS = True
-!USE_PSURF_IN_EOS = False
+!MIN_SALINITY = 0.01 !old explicit
+FIX_UNSPLIT_DT_VISC_BUG = True !False may not be used in the code (Alistair)
+Z_INIT_REMAP_OLD_ALG = True    !old=T, new=F
+!FIX_USTAR_GUSTLESS_BUG = False !old=F explicit
+!REMAP_UV_USING_OLD_ALG = True  !old=T explicit
+INTERPOLATE_RES_FN = True  !old=T, new=F
+USE_LAND_MASK_FOR_HVISC = False !old=F, new=T
+!MEKE_ALPHA_RHINES =0.05 !old explicit
+!MEKE_ALPHA_EADY   =0.05 !old explicit
+!USE_GM_WORK_BUG = True  !old explicit
+!KAPPA_SHEAR_ITER_BUG = True  !old explicit
+!KAPPA_SHEAR_ALL_LAYER_TKE_BUG = True  !old explicit
+!USE_MLD_ITERATION = False !old explicit
+!ML_RAD_BUG old=T, new=F, but since ML_RADIATION = False(default), so no impact
+!BULKML_CONV_MOMENTUM_BUG old=T, new=F, not in doc, so must be off
+!GUST_CONST = 0.02 !old explicit
+!DEFAULT_2018_ANSWERS = True !old explicit
+!USE_PSURF_IN_EOS = False !old explicit
+GILL_EQUATORIAL_LD = False !old=F, new=T
 
 ! === module MOM ===
 
