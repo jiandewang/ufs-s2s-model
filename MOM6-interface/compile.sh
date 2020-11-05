@@ -68,10 +68,10 @@ if [[ ${compile_MOM6_LIB} == 1 ]] ; then
     fi
 
     echo "generating file_paths ..."
-    $BASEDIR/mkmf/bin/list_paths $BASEDIR/MOM6/src/*/ \
-                                 $BASEDIR/MOM6/src/*/*/ \
-                                 $BASEDIR/MOM6/config_src/dynamic/ \
-                                 $BASEDIR/MOM6/config_src/nuopc_driver/{mom_ocean_model_nuopc.F90,mom_surface_forcing_nuopc.F90}
+    $BASEDIR/mkmf/bin/list_paths -l $BASEDIR/MOM6/src/*/ \
+                                    $BASEDIR/MOM6/src/*/*/ \
+                                    $BASEDIR/MOM6/config_src/dynamic/ $BASEDIR/MOM6/config_src/external/ \
+                                    $BASEDIR/MOM6/config_src/nuopc_driver/{mom_ocean_model_nuopc.F90,mom_surface_forcing_nuopc.F90}
 
     echo "generating makefile ..."
     $BASEDIR/mkmf/bin/mkmf -t $BASEDIR/mkmf/templates/${COMPILE_OPTION} -p lib_ocean.a -o "-I${FMS_DIR}" path_names
